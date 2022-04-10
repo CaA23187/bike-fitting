@@ -6,7 +6,7 @@ def main():
     print("         使用前需测量跨高、臂长、胸高、身高             ")
     print("---------------!!!所有长度单位均为cm------------------\n\n")
     dangao = float(input("请输入跨高(cm): "))
-    C_switch = int(input("请输入stack校正值, 竞技需求与能力 0; 普通 1; 舒适取向 2 :   "))
+    C_switch = int(input("请输入stack校正选项, 竞技需求与能力 0; 普通 1; 舒适取向 2 :   "))
     if C_switch == 0:
         C = -2
     if C_switch == 1:
@@ -15,7 +15,7 @@ def main():
         C = 3
     else:
         C = 0
-    STR_switch = int(input("请输入STR值, 竞技需求与能力 0; 普通 1; 舒适取向 2 :   "))
+    STR_switch = int(input("请输入STR选项, 竞技需求与能力 0; 普通 1; 舒适取向 2 :   "))
     if STR_switch == 0:
         STR = 1.36
     if STR_switch == 1:
